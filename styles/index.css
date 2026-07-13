@@ -1,3 +1,15 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Google Sans Flex', 'Times New Roman';
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', 'Times New Roman';
+}
+
 header {
     background-color: rgb(239, 143, 16);
 }
@@ -11,6 +23,27 @@ header {
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+/*PREVIEW PRODUCTOS*/
+
+.conjunto-productos {
+    justify-content: center;
+    display: grid;
+    gap: 70px 100px;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+    box-shadow: 0px 0px 20px rgba(76, 50, 50, 0.6);
+    border-radius: 10px;
+
+    padding: 10px;
+    text-align: center;
 }
 
 .producto-imagen {
