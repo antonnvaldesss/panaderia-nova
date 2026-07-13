@@ -6,6 +6,12 @@ body {
     font-family: 'Google Sans Flex', 'Times New Roman';
 }
 
+.all {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 h1, h2, h3 {
     font-family: 'Bebas Neue', 'Times New Roman';
     text-align: center;
@@ -26,6 +32,12 @@ h3 {
 
 header {
     background-color: #1ebb45;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
 
 .main-bread {
@@ -56,6 +68,7 @@ header {
 .sobre-nosotros {
     width: 1200px;
     margin: auto;
+    margin-top: 50px;
 
     text-align: justify;
 }
