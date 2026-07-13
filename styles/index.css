@@ -8,6 +8,19 @@ body {
 
 h1, h2, h3 {
     font-family: 'Bebas Neue', 'Times New Roman';
+    text-align: center;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 header {
@@ -24,6 +37,11 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.titulo-nova, .subtitulo-nova {
+    margin: 0px;
+}
+
 
 /*PREVIEW PRODUCTOS*/
 
