@@ -1,0 +1,129 @@
+/*--FONTS--*/
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*--ROOT--*/
+:root {
+    --main-color: #E9A71E;
+    --header-color: #60992D;
+}
+
+/*--BODY--*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Google Sans Flex', 'Times New Roman';
+
+    margin: 0;
+
+    background-color: wheat;
+}
+
+/*--NAV--*/
+.navigation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    position: absolute;
+
+    width: 90%;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--header-color);
+    border-radius: 0 0 20px 20px;
+    box-shadow: black 0 0 30px;
+}
+
+.logo {
+    width: 4rem;
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/*--H1--*/
+.bread-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50vh;
+    background-image: url(resources/mohamed-hassouna-bread.jpg);
+    background-size: cover;
+}
+
+.bread-image h1 {
+    font-family: 'Bebas Neue', 'Times New Roman';
+    font-size: 10rem;
+    color: white;
+    text-shadow: black 0 0 20px;
+    text-align: center;
+
+    transform: translateY(30px);
+}
+
+/*--MAIN--*/
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50vw;
+}
+
+.text h2 {
+    font-family: 'Bebas Neue', 'Times New Roman';
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.text p {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+/*--SMALL--*/
+@media (max-width: 768px) {
+    .navigation-container {
+        display: flex;
+        flex-direction: column; 
+        width: 100%; 
+        height: 20vh;
+        padding-bottom: 1rem;
+    }
+
+    .nav {
+        padding: 20px;
+    }
+
+    .logo {
+        padding: 0.5rem;
+    }
+
+    .bread-image h1 {
+        transform: translateY(70px);
+    }
+
+    .text {
+    width: 80vw;
+    }
+}
